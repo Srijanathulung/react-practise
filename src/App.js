@@ -30,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <h1>Lets start the react</h1>
+
       <ExpenseItem
         titleAttribute={expense[0].title}
         amountAttribute={expense[0].amount}
