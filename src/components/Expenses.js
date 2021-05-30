@@ -1,7 +1,7 @@
 import ExpenseItem from './ExpenseItem';
-import Expenses from './Expenses.css';
+import  './Expenses.css';
 
-function Expense(props) {
+function Expenses(props) {
     console.log('this is apple');
     return (
         <div className="expenses">
@@ -29,4 +29,4 @@ function Expense(props) {
         </div>
     )
 }
-export default Expense;
+export default Expenses;
