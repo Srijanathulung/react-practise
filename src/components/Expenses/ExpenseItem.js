@@ -3,7 +3,7 @@ import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 
 
-function ExpenseItem(props) {
+const ExpenseItem=(props) =>{
     
     //card bhaneyko custom wrapper component ho ,used as reusable wrapper.
     // return <Card classNameX='expense-item'>

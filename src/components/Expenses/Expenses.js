@@ -2,7 +2,7 @@ import ExpenseItem from './ExpenseItem';
 import './Expenses.css';
 import Card from '../UI/Card';
 
-function Expenses(props) {
+const Expenses=(props)=> {
     console.log('this is apple');
   return (
       //yeha className bhaney ko just a prop in this case coz yo custom component ho.
