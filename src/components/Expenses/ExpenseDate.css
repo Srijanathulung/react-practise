@@ -3,22 +3,21 @@
   flex-direction: column;
   width: 5.5rem;
   height: 5.5rem;
-  border: 1px solid white;
-  background-color: rgb(48, 40, 40);
+  border: 1px solid #ececec;
+  background-color: #2a2a2a;
   color: white;
+  border-radius: 12px;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
 }
 .expense-date_month {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: bold;
 }
 .expense-date_year {
   font-size: 0.75rem;
-  font-weight: bold;
 }
 .expense-date_day {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }

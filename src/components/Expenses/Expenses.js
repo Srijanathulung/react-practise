@@ -1,10 +1,14 @@
 import ExpenseItem from './ExpenseItem';
-import  './Expenses.css';
+import './Expenses.css';
+import Card from '../UI/Card';
 
 function Expenses(props) {
     console.log('this is apple');
-    return (
-        <div className="expenses">
+  return (
+      //yeha className bhaney ko just a prop in this case coz yo custom component ho.
+        <Card classNameX="expenses">
+        {/* <div className="expenses"> */}
+
             <ExpenseItem
         titleAttribute={props.items[0].title}
         amountAttribute={props.items[0].amount}
@@ -25,8 +29,9 @@ function Expenses(props) {
       amountAttribute={props.items[3].amount}
         dateAttribute={props.items[3].date}
       />
+{/* </div> */}
+      </Card>
 
-        </div>
     )
 }
 export default Expenses;
