@@ -52,6 +52,9 @@ const ExpenseForm = () => {
             date: new Date(enteredDate)
         };
         console.log(expenseData);
+        setEnteredTitle('');
+        setEnteredAmount('');
+        setEnteredDate('');
      };
     // console.log('Expense form is working')
     
@@ -62,6 +65,7 @@ const ExpenseForm = () => {
                  <label>Title</label>
                     <input
                         type='text'
+                        value={enteredTitle}
                         onChange={titleChangeHandler}
                     />
             </div>
@@ -71,6 +75,7 @@ const ExpenseForm = () => {
                     <input
                         type='number'
                         min='0.01' max='1000'
+                        value={enteredAmount}
                         onChange={amountChangeHandler}
                     />
             </div>
@@ -81,6 +86,7 @@ const ExpenseForm = () => {
                         type='Date'
                         min='1/1/2019'
                         max='12/30/2022'
+                        value={enteredDate}
                         onChange={dateChangeHandler}
                     />
              </div>
