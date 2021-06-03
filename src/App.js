@@ -28,10 +28,15 @@ const App=()=> {
       date: new Date(2021,2,12),
     }
   ]
+
+  const addExpenseDataHandler = expense => {
+    console.log('this is app.js');
+    console.log(expense);
+  }
   return (
     <div className="App">
       <h1>Lets start the react</h1>
-      <NewExpense/>
+      <NewExpense addExpenseData={addExpenseDataHandler }/>
       <Expenses items={expense} />
     </div>
   );
