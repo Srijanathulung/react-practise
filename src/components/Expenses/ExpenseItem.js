@@ -24,7 +24,10 @@ const clickHandler = () => {
             <div className='expense-item_description'>
                 {/* <h2>{props.titleAttribute}</h2> */}
                 <h2>{title}</h2>
-                <div className='expense-item_price'>{props.amountAttribute}</div>
+                <div className='expense-item_price'>
+                    {props.currency}
+                    {props.amountAttribute}
+                </div>
                 <button onClick={clickHandler}>Change Title</button>
             
                 </div>

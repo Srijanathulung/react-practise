@@ -6,26 +6,30 @@ import React, { useState } from 'react';
 const dummy_expense = [{
   id: 'a1',
   title: 'toilet paper',
-  amount: 'Rs 20',
-  date: new Date(2020,10,12),
+  amount: '20',
+  date: new Date(2020, 10, 12),
+  currency: 'NRS '
 },
   {
     id: 'a2',
     title: 'towel',
-    amount: 'Rs 200',
-    date: new Date(2021,2,12),
+    amount: '200',
+    date: new Date(2021, 2, 12),
+    currency: 'NRS '
   },
   {
     id: 'a3',
     title: 'onion',
-    amount: 'Rs 20',
-    date: new Date(2021,5,12),
+    amount: ' 20',
+    date: new Date(2021, 5, 12),
+    currency: 'NRS '
   },
   {
     id: 'a4',
     title: 'apple',
-    amount: 'Rs 250',
-    date: new Date(2021,2,12),
+    amount: ' 250',
+    date: new Date(2021, 2, 12),
+    currency: 'NRS '
   }
 ]
 
@@ -46,7 +50,9 @@ const App = () => {
   return (
     <div className="App">
     
-      <NewExpense addExpenseData={()=>addExpenseDataHandler}/>
+      <NewExpense addExpenseData={(expense) => {
+        addExpenseDataHandler(expense)
+      }}/>
       <Expenses items={expenses} />
     </div>
   );
